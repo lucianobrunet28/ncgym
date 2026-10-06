@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NC GYM — Gimnasio en Wilde</title>
+<meta name="description" content="NC GYM: gimnasio en Wilde con pase libre, máquinas nuevas, vestuario con duchas y cafetería con menú proteico. Bahía Blanca 450.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230a0a0b'/%3E%3Ctext x='50' y='68' font-family='Arial Black, sans-serif' font-size='56' font-weight='900' fill='%23f9611c' text-anchor='middle'%3ENC%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap">
+
+<link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20261006d">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="nav" data-nav>
+  <div class="container nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img class="logo-mark" src="assets/img/logo.png" alt="NC GYM" onerror="this.style.display='none'">
+      <span class="nav-wordmark">NC<em>GYM</em></span>
+    </a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a class="nav-link" href="#servicios">Servicios</a>
+      <a class="nav-link" href="#precios">Precios</a>
+      <a class="nav-link" href="#sede">Sede</a>
+      <a class="nav-link" href="#cafeteria">Cafetería</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:.9rem;">
+      <a href="#contacto" class="btn btn-primary nav-cta"><span>Escribinos</span></a>
+      <button class="nav-burger" data-nav-burger aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-mobile" data-nav-mobile aria-hidden="true">
+  <div class="nav-mobile-inner">
+    <a href="#servicios" data-nav-mobile-link>Servicios</a>
+    <a href="#precios" data-nav-mobile-link>Precios</a>
+    <a href="#sede" data-nav-mobile-link>Sede</a>
+    <a href="#cafeteria" data-nav-mobile-link>Cafetería</a>
+    <a href="#faq" data-nav-mobile-link>Preguntas</a>
+    <a href="#contacto" data-nav-mobile-link>Contacto</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" data-parallax-layer="0.12">
+      <img src="assets/img/hero.webp" alt="" width="1672" height="941" fetchpriority="high">
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <h1 class="hero-title" data-reveal>Tu mejor versión<br><em>te espera</em>.</h1>
+      <p class="hero-sub" data-reveal>
+        Pase libre, máquinas nuevas, profes que te arman la rutina y una cafetería proteica para recargar energía. Todo en Bahía Blanca 450, Wilde.
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="https://wa.me/5491176700611?text=Hola%20NC%20GYM%2C%20quiero%20consultar%20por%20el%20gimnasio" target="_blank" rel="noopener" class="btn btn-primary"><span>Escribinos</span></a>
+        <a href="https://www.instagram.com/ncgymok/" target="_blank" rel="noopener" class="btn btn-ghost">Conocer nuestro Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <h2>Todo lo que necesitás<br>en un solo <em>lugar</em></h2>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="card service-card" data-reveal>
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12h2M20 12h2M6 8v8M18 8v8M6 12h12"/><path d="M4 9v6M20 9v6"/></svg>
+          </div>
+          <h3>Máquinas nuevas</h3>
+          <p>Salón de musculación profesional con equipamiento recién estrenado y amplio mancuernero para entrenar sin esperas.</p>
+        </article>
+
+        <article class="card service-card" data-reveal>
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M8.5 14 4 21l3-1 1.5 3L11 17"/><path d="m15.5 14 4.5 7-3-1-1.5 3L13 17"/></svg>
+          </div>
+          <h3>Rutinas a medida</h3>
+          <p>Profes que te arman la rutina según tu objetivo.</p>
+        </article>
+
+        <article class="card service-card" data-reveal>
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 8.4 8 10 4.6-1.6 8-5 8-10V6l-8-4Z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Suplementos y espacio de fotos</h3>
+          <p>Venta de suplementos en el local, un rincón pensado para tus fotos de progreso y torre de carga para el celular.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section class="pricing" id="precios">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <h2>Un solo plan,<br><em>pase libre</em></h2>
+        <p>Entrená los días y horarios que quieras, sin restricciones.</p>
+      </div>
+
+      <div class="price-panel" data-reveal>
+        <div class="price-plan">
+          <div class="price-plan-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c-2-2.7-3.6-4-5.5-4a4 4 0 0 0 0 8c1.9 0 3.5-1.3 5.5-4Zm0 0c2 2.7 3.6 4 5.5 4a4 4 0 0 0 0-8c-1.9 0-3.5 1.3-5.5 4Z"/></svg>
+          </div>
+          <h3>Pase libre</h3>
+          <ul class="price-includes">
+            <li>Acceso libre al salón de musculación</li>
+            <li>Profes y rutinas personalizadas</li>
+            <li>Vestuario con duchas</li>
+          </ul>
+        </div>
+
+        <div class="price-options">
+          <div class="price-box">
+            <span class="price-label">Efectivo</span>
+            <span class="price-value">$55.000</span>
+          </div>
+          <div class="price-box">
+            <span class="price-label">Transferencia</span>
+            <span class="price-value">$60.000</span>
+          </div>
+          <div class="price-fee">
+            <span>Inscripción <strong>$5.000</strong></span>
+            <span class="price-fee-note">Una sola vez</span>
+          </div>
+          <a href="https://wa.me/5491176700611?text=Hola%20NC%20GYM%2C%20quiero%20anotarme%20con%20el%20pase%20libre" target="_blank" rel="noopener" class="btn btn-primary price-cta"><span>Quiero anotarme</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEDE -->
+  <section id="sede">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2>Así nos vas a<br>encontrar en <em>Wilde</em></h2>
+        <p>Bahía Blanca 450, fácil de llegar desde toda la zona.</p>
+      </div>
+
+      <div class="sede-grid">
+        <div class="sede-info card" data-reveal>
+          <dl class="sede-details">
+            <div class="sede-detail">
+              <dt>Dirección</dt>
+              <dd>Bahía Blanca 450, Wilde, Buenos Aires</dd>
+            </div>
+            <div class="sede-detail">
+              <dt>Horarios</dt>
+              <dd>Lunes a viernes: 7:00 – 22:00<br>Sábados: 10:00 – 15:00</dd>
+            </div>
+            <div class="sede-detail">
+              <dt>Teléfono</dt>
+              <dd>011 7670-0611</dd>
+            </div>
+          </dl>
+          <div class="sede-actions">
+            <a href="https://wa.me/5491176700611?text=Hola%20NC%20GYM%2C%20quiero%20consultar%20por%20el%20gimnasio" target="_blank" rel="noopener" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.1 9 9.7 8 9.5 7.5c-.2-.5-.3-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+              <span>Escribinos por WhatsApp</span>
+            </a>
+            <a href="https://www.instagram.com/ncgymok/" target="_blank" rel="noopener" class="btn btn-ghost">Conocer nuestro Instagram</a>
+          </div>
+        </div>
+
+        <div class="sede-video" data-reveal>
+          <video src="assets/video/recorrido.mp4" poster="assets/video/recorrido-poster.webp" muted loop playsinline autoplay preload="metadata" aria-label="Recorrido por el interior de NC GYM"></video>
+        </div>
+
+        <div class="sede-map" data-reveal>
+          <iframe src="https://www.google.com/maps?q=Bah%C3%ADa+Blanca+450,+Wilde,+Buenos+Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de NC GYM en el mapa"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAFETERÍA -->
+  <section class="cafe" id="cafeteria">
+    <div class="container">
+      <div class="cafe-head" data-reveal>
+        <span class="cafe-mark" aria-hidden="true">NC Café</span>
+        <h2>Cafetería con<br><em>menú proteico</em></h2>
+        <p>Disfrutá rico, saludable y energizá tu día, antes o después de entrenar.</p>
+      </div>
+
+      <h3 class="cafe-subtitle" data-reveal><span>Protein menú</span></h3>
+      <div class="product-grid">
+        <article class="product" data-reveal>
+          <div class="product-media">
+            <img src="assets/img/cafe/alfajor.webp" alt="Alfajor proteico bañado en chocolate, cortado al medio" loading="lazy" width="800" height="800">
+          </div>
+          <div class="product-body">
+            <h4>Alfajores proteicos</h4>
+            <p>Bañados en chocolate, con relleno cremoso.</p>
+            <ul class="product-tags"><li>Alto en proteínas</li><li>Bajo en azúcares</li></ul>
+          </div>
+        </article>
+
+        <article class="product" data-reveal>
+          <div class="product-media">
+            <img src="assets/img/cafe/muffin-coco.webp" alt="Muffin de coco con dulce de leche" loading="lazy" width="800" height="800">
+          </div>
+          <div class="product-body">
+            <h4>Muffin coco y dulce de leche</h4>
+            <p>Ideal para cualquier momento del día.</p>
+            <ul class="product-tags"><li>Alto en proteínas</li></ul>
+          </div>
+        </article>
+
+        <article class="product" data-reveal>
+          <div class="product-media">
+            <img src="assets/img/cafe/muffin-banoffee.webp" alt="Muffin banoffee estilo marmolado" loading="lazy" width="800" height="800">
+          </div>
+          <div class="product-body">
+            <h4>Muffin banoffee</h4>
+            <p>Estilo marmolado, sabor único y equilibrado.</p>
+            <ul class="product-tags"><li>Alto en proteínas</li></ul>
+          </div>
+        </article>
+
+        <article class="product" data-reveal>
+          <div class="product-media">
+            <img src="assets/img/cafe/muffin-carrot.webp" alt="Muffin carrot cake con zanahoria y especias" loading="lazy" width="800" height="800">
+          </div>
+          <div class="product-body">
+            <h4>Muffin carrot cake</h4>
+            <p>Con zanahoria y especias naturales.</p>
+            <ul class="product-tags"><li>Alto en proteínas</li></ul>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="cafe-subtitle" data-reveal><span>Café de varias variedades</span></h3>
+      <div class="coffee-grid">
+        <figure class="coffee" data-reveal>
+          <img src="assets/img/cafe/cafe-solo.webp" alt="Café solo en taza blanca de NC GYM" loading="lazy" width="800" height="800">
+          <figcaption>Café solo</figcaption>
+        </figure>
+        <figure class="coffee" data-reveal>
+          <img src="assets/img/cafe/cafe-con-leche.webp" alt="Café con leche en taza blanca de NC GYM" loading="lazy" width="800" height="800">
+          <figcaption>Café con leche</figcaption>
+        </figure>
+        <figure class="coffee" data-reveal>
+          <img src="assets/img/cafe/lagrima.webp" alt="Lágrima en taza de vidrio de NC GYM" loading="lazy" width="800" height="800">
+          <figcaption>Lágrima</figcaption>
+        </figure>
+        <figure class="coffee" data-reveal>
+          <img src="assets/img/cafe/moka.webp" alt="Moka con arte latte en taza de NC GYM" loading="lazy" width="800" height="800">
+          <figcaption>Moka</figcaption>
+        </figure>
+      </div>
+
+      <ul class="cafe-features" data-reveal>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 12h2M20 12h2M6 8v8M18 8v8M6 12h12"/></svg>
+          Opciones proteicas
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 16-9 0 12-4 16-9 16Z"/><path d="M4 21c3-5 6-8 10-10"/></svg>
+          Ingredientes de calidad
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M4 20 20 4"/></svg>
+          Bajo en azúcares
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+          Ideal antes o después de entrenar
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="reviews" id="resenas">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <h2>Lo que dicen<br><em>nuestros socios</em></h2>
+        <a class="g-chip" href="https://maps.google.com/?cid=17316163891750642651" target="_blank" rel="noopener">
+          <svg class="g-logo" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2A11.9 11.9 0 0 1 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3a12 12 0 0 1-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+          <strong>5,0</strong>
+          <span class="g-stars" aria-label="5 de 5 estrellas">★★★★★</span>
+          <span class="g-chip-count">opiniones en Google</span>
+        </a>
+      </div>
+
+      <div class="reviews-grid">
+        <article class="g-review" data-reveal>
+          <header class="g-review-head">
+            <span class="g-avatar" style="background:#7b5cd6;">Y</span>
+            <div>
+              <span class="g-name">Yamila O.</span>
+              <span class="g-meta">1 opinión</span>
+            </div>
+            <svg class="g-logo g-logo--sm" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2A11.9 11.9 0 0 1 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3a12 12 0 0 1-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+          </header>
+          <div class="g-rating"><span class="g-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="g-new">Nuevo</span></div>
+          <p class="g-text">Súper completo el gimnasio! Los chicos unos genios</p>
+        </article>
+
+        <article class="g-review" data-reveal>
+          <header class="g-review-head">
+            <span class="g-avatar" style="background:#0f8a6c;">I</span>
+            <div>
+              <span class="g-name">Ivan C.</span>
+              <span class="g-meta">3 opiniones · 2 fotos</span>
+            </div>
+            <svg class="g-logo g-logo--sm" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2A11.9 11.9 0 0 1 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3a12 12 0 0 1-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>
+          </header>
+          <div class="g-rating"><span class="g-stars" aria-label="5 de 5 estrellas">★★★★★</span><span class="g-new">Nuevo</span></div>
+        </article>
+
+        <article class="g-review g-review--cta" data-reveal>
+          <span class="g-cta-stars" aria-hidden="true">★★★★★</span>
+          <h3>¿Ya entrenaste en NC GYM?</h3>
+          <p>Contanos tu experiencia en Google. Tu reseña ayuda a que más gente de Wilde se anime a empezar.</p>
+          <a href="https://search.google.com/local/writereview?placeid=ChIJ62heXcvJvJUR2yM-iFBfT_A" target="_blank" rel="noopener" class="btn btn-primary"><span>Dejar mi reseña</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <h2>Preguntas <em>frecuentes</em></h2>
+      </div>
+
+      <div class="faq-list faq-list--center" data-reveal>
+        <details class="faq-item">
+          <summary>¿Hay profesores y rutinas personalizadas?<span class="faq-icon"></span></summary>
+          <p>Sí. El gimnasio cuenta con profesores y rutinas personalizadas según tu objetivo.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo funciona el pase?<span class="faq-icon"></span></summary>
+          <p>Es pase libre: venís los días y en los horarios que quieras, dentro del horario del gimnasio.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Hay vestuario con duchas?<span class="faq-icon"></span></summary>
+          <p>Sí, contamos con vestuario con duchas.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Tienen un lugar para sacarse fotos?<span class="faq-icon"></span></summary>
+          <p>Sí, tenemos un espacio especialmente pensado para fotografías.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Hay profesores los sábados y feriados?<span class="faq-icon"></span></summary>
+          <p>Los sábados y feriados no hay profesores en el salón. Podés entrenar con tu rutina de la semana.</p>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo cargar el celular mientras entreno?<span class="faq-icon"></span></summary>
+          <p>Sí, contamos con una torre de carga para celulares.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="contacto">
+    <div class="container">
+      <h2>El cambio que buscás<br><em>empieza con un mensaje</em></h2>
+      <p>Escribinos y te contamos todo: el pase, los horarios y cómo arrancar. Lo difícil es decidirse, lo demás lo hacemos juntos.</p>
+      <div class="cta-final-actions">
+        <a href="https://wa.me/5491176700611?text=Hola%20NC%20GYM%2C%20quiero%20empezar%20a%20entrenar" target="_blank" rel="noopener" class="btn btn-glow">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.1 9 9.7 8 9.5 7.5c-.2-.5-.3-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+          Escribinos por WhatsApp
+        </a>
+        <a href="https://www.instagram.com/ncgymok/" target="_blank" rel="noopener" class="btn btn-ghost">Conocer nuestro Instagram</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img class="logo-mark logo-mark--lg" src="assets/img/logo.png" alt="NC GYM" onerror="this.style.display='none'">
+          <span class="nav-wordmark nav-wordmark--lg">NC<em>GYM</em></span>
+        </div>
+        <p class="footer-tag">Gimnasio en Wilde. Pase libre, máquinas nuevas, vestuario con duchas y cafetería proteica.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="tel:+541176700611">011 7670-0611</a></li>
+          <li><a href="https://www.instagram.com/ncgymok/" target="_blank" rel="noopener">@ncgymok</a></li>
+          <li><span>Bahía Blanca 450, Wilde</span></li>
+        </ul>
+        <h4 style="margin-top:1.4rem;">Horarios</h4>
+        <ul>
+          <li><span>Lun a vie: 7:00 – 22:00</span></li>
+          <li><span>Sábados: 10:00 – 15:00</span></li>
+        </ul>
+      </div>
+
+      <div class="footer-map">
+        <div>
+          <div class="footer-map-pin"></div>
+          <p style="color:var(--ink-mute); font-size:.85rem;">Bahía Blanca 450<br>Wilde, Buenos Aires</p>
+          <a href="https://maps.google.com/?cid=17316163891750642651" target="_blank" rel="noopener">Cómo llegar · Google Maps ↗</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 NC GYM. Todos los derechos reservados.</span>
+      <span>Bahía Blanca 450, Wilde</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a class="wa-float" href="https://wa.me/5491176700611?text=Hola%20NC%20GYM%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noopener" aria-label="Consultanos por WhatsApp">
+  <span class="wa-float-ping" aria-hidden="true"></span>
+  <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.4.1-.2 0-.4 0-.5C10.1 9 9.7 8 9.5 7.5c-.2-.5-.3-.4-.5-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3Z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg>
+</a>
+
+<!-- Scripts: classic, deferred, IIFE — no ES modules (breaks file:// and cache-busting) -->
+<script defer src="main.js?v=20261006d"></script>
+</body>
+</html>
